@@ -10,7 +10,7 @@ class UnmountPage extends Component {
   }
 
   componentDidMount() {
-    console.log("UnmountPage componentDidMount  called");
+    console.log("UnmountPage componentDidUnmount  called");
   }
 
   render() {
