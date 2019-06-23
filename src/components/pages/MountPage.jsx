@@ -14,6 +14,10 @@ class MountPage extends Component {
     console.log("MountPage componentDidMount  called");
   }
 
+  testLogging() {
+    const error = this.state.doNotExist;
+  }
+
   render() {
     console.log("MountPage render called");
 
@@ -43,6 +47,13 @@ class MountPage extends Component {
         </p>
 
         <ChildPage />
+
+        <h2>Logging by Sentry</h2>
+        <p>
+          To see the logged errors go to
+          https://sentry.io/matt-phung/matt-phung/getting-started/javascript-react/
+        </p>
+        <button onClick={this.testLogging}>Break the world</button>
       </React.Fragment>
     );
   }
